@@ -1,0 +1,55 @@
+/**
+* form-section
+**/
+.form-section{
+    margin-top: 35%;
+    padding: 25px;
+    background: white;
+    border-radius: 5px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.main-form {
+    padding: 5px 0;
+}
+.row {
+    margin-bottom: 25px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row label {
+    display: inline-block;
+    width: 20%;
+}
+
+.row input[type=text], .row input[type=password] {
+    display: inline-block;
+    width: 75%;
+    padding: 15px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Mobile Screen */
+@media (max-width: 412px) {
+    .main-form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .row label {
+        width: 100%;
+    }
+    .row input[type=text], .row input[type=password] {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

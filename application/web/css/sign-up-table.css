@@ -1,0 +1,45 @@
+.main-table {
+    width: 100%;
+    padding: 25px;
+    margin-top: 25%;
+    background-color: #fff;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.main-table table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    background-color: transparent;
+}
+
+.main-table table th, .main-table table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+ul.pagination {
+    text-align: center;
+}
+
+ul.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+ul.pagination li span {
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+ul.pagination li span:hover {
+    cursor: pointer;
+}
+
+ul.pagination li span.current {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}

@@ -1,0 +1,99 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+/*Animation*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    background-color: #cccc;
+    background-image: url("../images/event.jpg");
+}
+
+.container {
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.table-container {
+    width: 992px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/**
+* Errors & Success
+**/
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+ul.errors {
+    color: red;
+}
+
+ul.success {
+    color: #04AA6D;
+}
+
+/**
+*Button
+**/
+.submit {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.submit button {
+    width: 100%;
+    padding: 10px;
+    background-color: #04AA6D;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #04AA6D;
+    box-shadow: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit button:hover {
+    background-color: #05c07c;
+    border-color: #05c07c;
+}
+
+/***
+* Common
+**/
+.text-center {
+    text-align: center!important;
+}
+.hide {
+    display: none;
+}
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+}

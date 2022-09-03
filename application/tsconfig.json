@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "es6"
+    ],
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["src"],
+  "files": ["./src/@types/express/Index.d.ts"],
+  "exclude": ["node_modules"]
+}

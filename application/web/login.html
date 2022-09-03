@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body onload="checkAuth">
+<div class="container">
+	<div class="form-section">
+		<h2 class="title text-center">Login</h2>
+		<form class="login-form" id="login-form">
+			<ul id="errors" class="errors hide"></ul>
+			<ul id="success" class="success hide"></ul>
+			<div class="row">
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" placeholder="Please input your email here.">
+			</div>
+			<div class="row">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" placeholder="Please input your password here.">
+			</div>
+			<div class="submit">
+				<button type="button" onclick="onLogin('login-form')">Login</button>
+			</div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/auth.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+	(async () => {
+		await checkAuth();
+	})();
+</script>
+</body>
+</html>
